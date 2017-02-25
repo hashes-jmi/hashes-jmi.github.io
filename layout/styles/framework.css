@@ -68,12 +68,12 @@ label{margin-bottom:5px;}
 
 /* Generalise
 --------------------------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:22px; line-height:normal; font-weight:normal; text-transform:uppercase;}
+h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:22px; line-height:normal; font-weight:normal; text-transform:uppercase; font-family: Comic Sans MS}
 
 address{font-style:normal; font-weight:normal;}
 hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
 
-.font-xs{font-size:.8rem;}
+.font-xs{font-size:0.8rem;}
 .font-x1{font-size:1.2rem;}
 .font-x2{font-size:1.8rem;}
 .font-x3{font-size:2.8rem;}
