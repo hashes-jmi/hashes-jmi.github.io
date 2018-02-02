@@ -48,7 +48,7 @@
 										</ul>
 									</div>
 									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
+										<img src="images/computer.png" alt="" height="100px"/>
 									</span>
 								</section>
 
@@ -120,11 +120,11 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt=""/></a>
 											<h3>We Support Open Source</h3>
 											<p>If you find any glitch in the webpage, feel free to report an issue on the webpage's github repository. We will be happy to merge your pull requests :)</p>
 											<ul class="actions">
-												<li><a href="#" class="button">Go to the repository</a></li>
+												<li><a href="https://github.com/hashes-jmi/hashes-jmi.github.io" class="button">Go to the repository</a></li>
 											</ul>
 										</article>
 										<!--
@@ -183,7 +183,7 @@
 											</ul>
 										</li>
 										<li><a href="#">Club Events</a></li>
-										<li><a href="#">About Us</a></li>
+										<li><a href="#touch">About Us</a></li>
 									</ul>
 								</nav>
 
@@ -200,8 +200,8 @@
 										</article>
 										<article>
 											<h2>Najeeb Khan</h2>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Hi! I am an Undergrad @ Department Of Computer Engineering, currently pursuing BTech (3rd Year). My interests include Machine Learning and Data Analytics.</p>
+											<a href="https://najeeb97khan.herokuapp.com" class="image"><img src="images/pic08.jpg" alt="" height="350px"/></a>
+											<p>Hi! I am an Undergrad @ Department Of Computer Engineering, currently pursuing BTech (4th Year). My interests include Machine Learning and Data Analytics.</p>
 										</article>
 										<article>
 											<h2>Abdul Mohsin Siddiqi</h2>
@@ -230,7 +230,7 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Get in touch</h2>
+										<h2 id="touch">Get in touch</h2>
 									</header>
 									<ul class="contact">
 										<li class="fa-user">Register @<br><a href="https://bit.ly/HASHes">bit.ly/HASHes</a></li>
@@ -256,6 +256,33 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $("a").on('click', function(event) {
+
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
+
+			      // Store hash
+			      var hash = this.hash;
+
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			   
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			      });
+			    } // End if
+			  });
+			});
+			</script>
+
 
 	</body>
 </html>
